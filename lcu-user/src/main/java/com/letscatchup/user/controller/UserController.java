@@ -38,7 +38,6 @@ public class UserController {
 		
 	}
 	
-
 	@RequestMapping(value = "/{userId}", method= RequestMethod.GET)
 	public UserEntity getUser(@PathVariable(name="userId") Long userId) {
 		return userService.loadUser(userId);

@@ -4,10 +4,19 @@
   <groupId>com.letscatchup</groupId>
   <artifactId>lcu-group-management</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
   
   <parent>
        <groupId>com.letscatchup</groupId>
        <artifactId>lcu-base</artifactId>
        <version>0.0.1-SNAPSHOT</version>
   </parent>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>com.letscatchup</groupId>
+  		<artifactId>lcu-core</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>
