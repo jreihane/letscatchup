@@ -1,0 +1,7 @@
+package com.letscatchup.sponsor.domain.entity;
+
+import com.letscatchup.core.domain.BaseEntity;
+
+public class SponsorEntity extends BaseEntity {
+
+}

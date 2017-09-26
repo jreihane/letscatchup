@@ -1,0 +1,8 @@
+package com.letscatchup.event.domain.entity;
+
+
+public class AttendeeEntity {
+
+	
+	
+}

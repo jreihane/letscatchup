@@ -1,3 +1,11 @@
-/home/reihane/Projects/implementation/letscatchup/lcu-event-management/src/main/java/com/letscatchup/event/entity/EventEntity.java
+/home/reihane/Projects/implementation/letscatchup/lcu-event-management/src/main/java/com/letscatchup/event/domain/entity/EventCommentEntity.java
+/home/reihane/Projects/implementation/letscatchup/lcu-event-management/src/main/java/com/letscatchup/event/service/EventCommentService.java
+/home/reihane/Projects/implementation/letscatchup/lcu-event-management/src/main/java/com/letscatchup/event/domain/entity/EventEntity.java
+/home/reihane/Projects/implementation/letscatchup/lcu-event-management/src/main/java/com/letscatchup/event/domain/repository/EventCommentsCrudRepository.java
+/home/reihane/Projects/implementation/letscatchup/lcu-event-management/src/main/java/com/letscatchup/event/domain/repository/EventCrudRepository.java
+/home/reihane/Projects/implementation/letscatchup/lcu-event-management/src/main/java/com/letscatchup/event/controller/EventCommentController.java
 /home/reihane/Projects/implementation/letscatchup/lcu-event-management/src/main/java/com/letscatchup/event/App.java
+/home/reihane/Projects/implementation/letscatchup/lcu-event-management/src/main/java/com/letscatchup/event/service/EventService.java
+/home/reihane/Projects/implementation/letscatchup/lcu-event-management/src/main/java/com/letscatchup/event/type/FoodType.java
+/home/reihane/Projects/implementation/letscatchup/lcu-event-management/src/main/java/com/letscatchup/event/type/EventStatus.java
 /home/reihane/Projects/implementation/letscatchup/lcu-event-management/src/main/java/com/letscatchup/event/controller/EventController.java

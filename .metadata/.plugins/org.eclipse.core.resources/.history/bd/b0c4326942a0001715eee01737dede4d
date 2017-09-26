@@ -1,0 +1,7 @@
+package com.letscatchup.user.domain.entity;
+
+import com.letscatchup.core.domain.BaseEntity;
+
+public class AtendeeEntity extends BaseEntity {
+
+}

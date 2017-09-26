@@ -1,0 +1,5 @@
+package com.letscatchup.core.type;
+
+public enum BaseType {
+
+}

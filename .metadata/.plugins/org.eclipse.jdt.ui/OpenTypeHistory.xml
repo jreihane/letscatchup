@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=lcu-user/\/home\/reihane\/.m2\/repository\/org\/springframework\/data\/spring-data-commons\/1.13.0.RELEASE\/spring-data-commons-1.13.0.RELEASE.jar&lt;org.springframework.data.repository(CrudRepository.class[CrudRepository" modifiers="1537" timestamp="1505806546000"/>
+<typeInfo handle="=lcu-core/src\/main\/java&lt;com.letscatchup.core{BaseApp.java[BaseApp" modifiers="1" timestamp="1506227244000"/>
+<typeInfo handle="=lcu-core/src\/main\/java&lt;com.letscatchup.core.domain{BaseEntity.java[BaseEntity" modifiers="1025" timestamp="1505993948000"/>
+<typeInfo handle="=lcu-core/src\/main\/java&lt;com.letscatchup.core.db{LcuCrudRepository.java[LcuCrudRepository" modifiers="513" timestamp="1506146066000"/>
+</typeInfoHistroy>

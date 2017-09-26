@@ -1,0 +1,10 @@
+package com.letscatchup.event.domain.entity;
+
+import javax.persistence.Entity;
+
+import com.letscatchup.core.domain.BaseEntity;
+
+@Entity
+public class GroupEntity extends BaseEntity{
+
+}

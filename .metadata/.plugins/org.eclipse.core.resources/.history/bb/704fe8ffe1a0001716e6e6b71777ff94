@@ -1,0 +1,41 @@
+package com.letscatchup.group.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.letscatchup.event.domain.entity.EventEntity;
+import com.letscatchup.event.domain.repository.EventCrudRepository;
+import com.letscatchup.group.domain.entity.GroupEntity;
+import com.letscatchup.group.domain.repository.GroupCrudRepository;
+
+@Service
+public class GroupService {
+
+	@Autowired
+	private GroupCrudRepository groupCrudRepository;
+	
+	
+	public GroupEntity addEvent(GroupEntity groupEntity) {
+		
+		return groupCrudRepository.save(groupEntity);
+		
+	}
+	
+	public GroupEntity updateEvent(GroupEntity groupEntity) {
+		
+		return groupCrudRepository.save(groupEntity);
+		
+	}
+	
+	public void deleteEvent(Long groupId) {
+		
+		groupCrudRepository.delete(groupId);
+		
+	}
+
+	public GroupEntity loadEvent(Long groupId) {
+		
+		return groupCrudRepository.findOne(groupId);
+		
+	}
+}

@@ -27,6 +27,14 @@ import com.letscatchup.user.domain.entity.UserEntity;
 @SequenceGenerator(name="Id_Generator", sequenceName = "LCU_EVENTS_ID_SEQ")
 public class EventEntity extends BaseEntity {
 	
+	public EventEntity(long eventId) {
+		this.setId(eventId);
+	}
+	
+	public EventEntity() {
+		super();
+	}
+
 	@Column(name="EV_NAME")
 	private String name;
 	

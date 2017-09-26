@@ -1,0 +1,14 @@
+package com.letscatchup.group;
+
+import org.springframework.boot.SpringApplication;
+
+import com.letscatchup.core.BaseApp;
+import com.letscatchup.event.App;
+
+public class App extends BaseApp {
+
+	public static void main(String[] args) {
+		SpringApplication.run(App.class, args);
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.letscatchup.user.domain.entity;
+
+public class AtendeeEntity {
+
+}

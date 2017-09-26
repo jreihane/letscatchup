@@ -1,0 +1,7 @@
+package com.letscatchup.user.service;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface ssss extends CrudRepository<UserEntity, Long> {
+
+}

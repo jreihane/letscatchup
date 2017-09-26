@@ -1,6 +1,6 @@
 /home/reihane/Projects/implementation/letscatchup/lcu-core/src/main/java/com/letscatchup/core/domain/BaseCompositeEntity.java
+/home/reihane/Projects/implementation/letscatchup/lcu-core/src/main/java/com/letscatchup/core/BaseApp.java
 /home/reihane/Projects/implementation/letscatchup/lcu-core/src/main/java/com/letscatchup/core/exception/LcuRuntimeException.java
-/home/reihane/Projects/implementation/letscatchup/lcu-core/src/main/java/com/letscatchup/core/App.java
 /home/reihane/Projects/implementation/letscatchup/lcu-core/src/main/java/com/letscatchup/core/db/LcuCrudRepository.java
 /home/reihane/Projects/implementation/letscatchup/lcu-core/src/main/java/com/letscatchup/core/domain/BaseEntity.java
 /home/reihane/Projects/implementation/letscatchup/lcu-core/src/main/java/com/letscatchup/core/exception/LcuException.java

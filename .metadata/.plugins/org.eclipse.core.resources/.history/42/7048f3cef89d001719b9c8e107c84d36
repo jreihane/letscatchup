@@ -1,0 +1,24 @@
+package com.letscatchup.user.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.letscatchup.core.db.LcuCrudRepository;
+import com.letscatchup.user.domain.entity.UserEntity;
+
+@Service
+public class UserService {
+
+	private LcuCrudRepository lcuCrudRepository;
+	
+	@Autowired
+    public UserService(LcuCrudRepository lcuCrudRepository) {
+        this.lcuCrudRepository = lcuCrudRepository;
+}
+	
+	public UserEntity addUser(UserEntity userEntity) {
+		
+		return lcuCrudRepository.save(userEntity);
+		
+	}
+}

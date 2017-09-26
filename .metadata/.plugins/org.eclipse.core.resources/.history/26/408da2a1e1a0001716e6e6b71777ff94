@@ -1,0 +1,7 @@
+package com.letscatchup.group.domain.repository;
+
+import com.letscatchup.core.db.LcuCrudRepository;
+
+public interface GroupCrudRepository extends LcuCrudRepository<T, ID> {
+
+}

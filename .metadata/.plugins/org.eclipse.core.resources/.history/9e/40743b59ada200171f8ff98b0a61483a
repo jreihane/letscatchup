@@ -1,0 +1,30 @@
+package com.letscatchup.event.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.letscatchup.event.domain.entity.EventCommentEntity;
+import com.letscatchup.event.domain.repository.EventCommentsCrudRepository;
+
+@Service
+public class EventCommentService {
+
+	@Autowired
+	EventCommentsCrudRepository eventCommentsCrudRepository;
+	
+	public EventCommentEntity addComment(EventCommentEntity eventCommentEntity) {
+		return eventCommentsCrudRepository.save(eventCommentEntity);
+	}
+	
+	public void removeComment(EventCommentEntity eventCommentEntity) {
+		eventCommentsCrudRepository.delete(eventCommentEntity.getId());
+	}
+	
+	public EventCommentEntity loadComment(EventCommentEntity eventCommentEntity) {
+		return eventCommentsCrudRepository.find(eventCommentEntity);
+	}
+	
+	public EventCommentEntity updateComment(EventCommentEntity eventCommentEntity) {
+		return eventCommentsCrudRepository.save(eventCommentEntity);
+	}
+}

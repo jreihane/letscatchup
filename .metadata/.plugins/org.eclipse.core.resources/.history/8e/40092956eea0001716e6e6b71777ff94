@@ -1,0 +1,12 @@
+package com.letscatchup.group.service;
+
+import org.springframework.stereotype.Service;
+
+import com.letscatchup.group.domain.entity.GroupMember;
+
+@Service
+public class GroupMemberService {
+	public void addMember(GroupMember member) {
+		
+	}
+}

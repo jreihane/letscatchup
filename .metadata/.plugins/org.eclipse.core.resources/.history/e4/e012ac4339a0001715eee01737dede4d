@@ -1,0 +1,5 @@
+import com.letscatchup.core.domain.BaseEntity;
+
+public class GroupEntity extends BaseEntity {
+
+}

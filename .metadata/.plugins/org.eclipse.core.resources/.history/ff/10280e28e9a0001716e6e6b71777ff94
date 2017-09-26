@@ -1,0 +1,5 @@
+package com.letscatchup.group.domain.entity;
+
+public class GroupMember {
+
+}

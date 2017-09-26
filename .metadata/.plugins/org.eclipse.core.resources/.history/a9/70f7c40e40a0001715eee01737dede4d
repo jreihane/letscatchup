@@ -1,0 +1,39 @@
+package com.letscatchup.event.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.letscatchup.event.domain.entity.EventEntity;
+import com.letscatchup.event.domain.repository.EventCrudRepository;
+
+@Service
+public class EventService {
+
+	@Autowired
+	private EventCrudRepository eventCrudRepository;
+	
+	
+	public UserEntity addUser(EventEntity eventEntity) {
+		
+		return eventCrudRepository.save(eventEntity);
+		
+	}
+	
+	public UserEntity updateUser(EventEntity eventEntity) {
+		
+		return eventCrudRepository.save(eventEntity);
+		
+	}
+	
+	public void deleteUser(Long eventId) {
+		
+		eventCrudRepository.delete(eventId);
+		
+	}
+
+	public UserEntity loadUser(Long eventId) {
+		
+		return eventCrudRepository.findOne(eventId);
+		
+	}
+}

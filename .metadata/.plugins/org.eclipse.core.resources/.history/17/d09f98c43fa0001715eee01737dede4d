@@ -1,0 +1,7 @@
+package com.letscatchup.event.domain.repository;
+
+import com.letscatchup.core.db.LcuCrudRepository;
+
+public interface EventCrudRepository extends LcuCrudRepository<T, ID> {
+
+}

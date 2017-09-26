@@ -1,1 +1,10 @@
-/home/reihane/Projects/implementation/letscatchup/lcu-group-management/src/main/java/com/letscatchup/group/entity/GroupEntity.java
+/home/reihane/Projects/implementation/letscatchup/lcu-group-management/src/main/java/com/letscatchup/group/App.java
+/home/reihane/Projects/implementation/letscatchup/lcu-group-management/src/main/java/com/letscatchup/group/domain/entity/GroupCommentEntity.java
+/home/reihane/Projects/implementation/letscatchup/lcu-group-management/src/main/java/com/letscatchup/group/service/GroupService.java
+/home/reihane/Projects/implementation/letscatchup/lcu-group-management/src/main/java/com/letscatchup/group/type/MemberStatus.java
+/home/reihane/Projects/implementation/letscatchup/lcu-group-management/src/main/java/com/letscatchup/group/service/GroupMemberService.java
+/home/reihane/Projects/implementation/letscatchup/lcu-group-management/src/main/java/com/letscatchup/group/domain/repository/GroupCrudRepository.java
+/home/reihane/Projects/implementation/letscatchup/lcu-group-management/src/main/java/com/letscatchup/group/GroupController.java
+/home/reihane/Projects/implementation/letscatchup/lcu-group-management/src/main/java/com/letscatchup/group/domain/repository/GroupMemberCrudRepository.java
+/home/reihane/Projects/implementation/letscatchup/lcu-group-management/src/main/java/com/letscatchup/group/domain/entity/GroupMemberEntity.java
+/home/reihane/Projects/implementation/letscatchup/lcu-group-management/src/main/java/com/letscatchup/group/domain/entity/GroupEntity.java

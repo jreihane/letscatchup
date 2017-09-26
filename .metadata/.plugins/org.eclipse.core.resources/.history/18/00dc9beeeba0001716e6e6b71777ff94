@@ -1,0 +1,44 @@
+package com.letscatchup.group.domain.entity;
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import com.letscatchup.group.type.MemberStatus;
+import com.letscatchup.user.domain.entity.UserEntity;
+
+@Entity
+public class GroupMember {
+	
+	@EmbeddedId
+	private GroupMemberId groupMemberId; 
+	
+	@Column(name="GRM_USR_ID")
+	private UserEntity member;
+	
+	@Column(name="GRM_GR_ID")
+	private GroupEntity group;
+	
+	@Column(name="GRM_DATE")
+	private Date joinDate;
+	
+	@Column(name="GRM_STATUS")
+	private MemberStatus status;
+	
+	
+
+}
+
+@Embeddable
+class GroupMemberId {
+
+	@Id
+	UserEntity member;
+	
+	@Id
+	GroupEntity group;
+}

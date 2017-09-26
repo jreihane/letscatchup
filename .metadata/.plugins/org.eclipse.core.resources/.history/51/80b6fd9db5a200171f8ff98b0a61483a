@@ -1,0 +1,56 @@
+package com.letscatchup.event.domain.entity;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+@Entity
+public class EventAttendeeEntity {
+	
+	@EmbeddedId
+	private EventAttendeeId eventAttendeeId;
+
+
+	public EventAttendeeId getEventAttendeeId() {
+		return eventAttendeeId;
+	}
+
+	public void setEventAttendeeId(EventAttendeeId eventAttendeeId) {
+		this.eventAttendeeId = eventAttendeeId;
+	}
+	
+}
+
+@Embeddable
+class EventAttendeeId implements Serializable {
+	
+	@Column(name="EVA_EV_ID")
+	private long eventId;
+
+	@Column(name="EVA_USER_ID")
+	private long userId;
+
+	public long getEventId() {
+		return eventId;
+	}
+
+	public void setEventId(long eventId) {
+		this.eventId = eventId;
+	}
+
+	public long getUserId() {
+		return userId;
+	}
+
+	public void setUserId(long userId) {
+		this.userId = userId;
+	}
+	
+	
+	
+}

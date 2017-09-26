@@ -1,0 +1,12 @@
+package com.letscatchup.group;
+
+import com.letscatchup.core.BaseApp;
+
+public class App extends BaseApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.letscatchup.sponsor.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class SponsorService {
+
+}

@@ -1,0 +1,26 @@
+package com.letscatchup.event.service;
+
+import org.springframework.stereotype.Service;
+
+import com.letscatchup.event.domain.entity.EventCommentEntity;
+
+@Service
+public class EventAttendeeService {
+
+	public EventCommentEntity addComment(EventAttendeeEntity eventAttendeeEntity) {
+		return null;
+	}
+	
+	public void removeComment(long commentId) {
+//		.delete(commentId);
+	}
+	
+	public EventAttendeeEntity loadComment(long commentId) {
+		return null;
+	}
+	
+	public EventAttendeeEntity updateComment(EventAttendeeEntity eventAttendeeEntity) {
+		return null;
+	}
+	
+}

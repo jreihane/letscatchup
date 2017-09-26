@@ -1,3 +1,11 @@
 com/letscatchup/event/controller/EventController.class
+com/letscatchup/event/domain/repository/EventCommentsCrudRepository.class
+com/letscatchup/event/domain/entity/EventCommentEntity.class
+com/letscatchup/event/service/EventCommentService.class
+com/letscatchup/event/controller/EventCommentController.class
+com/letscatchup/event/domain/repository/EventCrudRepository.class
 com/letscatchup/event/App.class
-com/letscatchup/event/entity/EventEntity.class
+com/letscatchup/event/service/EventService.class
+com/letscatchup/event/type/EventStatus.class
+com/letscatchup/event/domain/entity/EventEntity.class
+com/letscatchup/event/type/FoodType.class

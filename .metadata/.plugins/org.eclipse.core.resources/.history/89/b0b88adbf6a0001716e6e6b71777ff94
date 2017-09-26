@@ -1,0 +1,41 @@
+package com.letscatchup.sponsor.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.letscatchup.group.domain.entity.GroupEntity;
+import com.letscatchup.group.domain.repository.GroupCrudRepository;
+import com.letscatchup.sponsor.domain.entity.SponsorCrudRepository;
+import com.letscatchup.sponsor.domain.entity.SponsorEntity;
+
+@Service
+public class SponsorService {
+
+	@Autowired
+	private SponsorCrudRepository sponsorCrudRepository;
+	
+	
+	public SponsorEntity addGroup(GroupEntity groupEntity) {
+		
+		return sponsorCrudRepository.save(groupEntity);
+		
+	}
+	
+	public GroupEntity updateGroup(GroupEntity groupEntity) {
+		
+		return sponsorCrudRepository.save(groupEntity);
+		
+	}
+	
+	public void deleteGroup(Long groupId) {
+		
+		sponsorCrudRepository.delete(groupId);
+		
+	}
+
+	public GroupEntity loadGroup(Long groupId) {
+		
+		return sponsorCrudRepository.findOne(groupId);
+		
+	}
+}

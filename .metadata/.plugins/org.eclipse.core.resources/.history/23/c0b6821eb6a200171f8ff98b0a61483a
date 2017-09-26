@@ -1,0 +1,27 @@
+package com.letscatchup.event.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.letscatchup.event.domain.entity.EventAttendeeEntity;
+import com.letscatchup.event.domain.repository.EventAttendeeCrudRepository;
+
+@Service
+public class EventAttendeeService {
+	
+	@Autowired
+	EventAttendeeCrudRepository eventAttendeeCrudRepository;
+
+	public EventAttendeeEntity addAttendee(EventAttendeeEntity eventAttendeeEntity) {
+		return eventAttendeeCrudRepository.save(eventAttendeeEntity);
+	}
+	
+	public void removeAttendee(long attendeId) {
+		eventAttendeeCrudRepository.delete(entity);
+	}
+	
+	public EventAttendeeEntity loadAttendee(long commentId) {
+		return null;
+	}
+	
+}

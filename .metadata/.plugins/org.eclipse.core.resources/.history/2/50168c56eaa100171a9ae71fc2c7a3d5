@@ -1,0 +1,11 @@
+package com.letscatchup.group.domain.entity;
+
+import javax.persistence.Entity;
+
+import com.letscatchup.core.domain.BaseEntity;
+
+@Entity
+public class GroupCommentEntity extends BaseEntity {
+
+}
+
