@@ -4,4 +4,5 @@ com/letscatchup/core/domain/BaseDto.class
 com/letscatchup/core/domain/BaseCompositeEntity.class
 com/letscatchup/core/db/LcuCrudRepository.class
 com/letscatchup/core/domain/BaseEntity.class
+com/letscatchup/core/util/ObjectConverter.class
 com/letscatchup/core/BaseApp.class

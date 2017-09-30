@@ -1,8 +1,0 @@
-package com.letscatchup.core.domain;
-
-import javax.persistence.Entity;
-
-@Entity
-public class BaseEntity {
-
-}
