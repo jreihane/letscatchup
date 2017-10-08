@@ -1,7 +1,0 @@
-package com.letscatchup.sponsor;
-
-import com.letscatchup.core.BaseApp;
-
-public class App extends BaseApp {
-
-}

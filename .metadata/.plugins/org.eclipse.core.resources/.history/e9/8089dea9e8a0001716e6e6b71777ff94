@@ -1,7 +1,0 @@
-package com.letscatchup.group.domain.entity;
-
-import com.letscatchup.core.domain.BaseEntity;
-
-public class GroupComment extends BaseEntity {
-
-}

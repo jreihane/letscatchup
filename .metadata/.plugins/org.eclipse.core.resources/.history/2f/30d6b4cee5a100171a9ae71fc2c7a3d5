@@ -1,6 +1,0 @@
-package com.letscatchup.event.service;
-
-@Service
-public class EventGroupService {
-
-}

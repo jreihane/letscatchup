@@ -1,0 +1,52 @@
+.eventListGeneral {
+	top: 40px;
+	position: absolute;
+	height: 100%;
+}
+
+.eventGeneral {
+	display: table-cell;
+	max-width: 800px;
+	padding: 5px;
+}
+
+.eventImg {
+	border: 1px solid black;
+	width: 350px;
+	height: 350px;
+}
+
+.eventTitleContainer {
+	height: 35px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.eventTitle {
+	font-size: 24px;
+	color: #247233;
+	font-weight: 900;
+	font-style: italic;
+	display: inline-block;
+	width: 70%;
+}
+
+.eventDate {
+	font-size: 14px;
+	font-weight: normal;
+	font-style: italic;
+	display: inline-block;
+}
+
+.eventGroupOrOrganiser {
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	color: #44784a;
+}
+
+.eventSponsor {
+	font-size: 18px;
+	font-weight: bold;
+	font-style: normal;
+	color: #12720c;
+}

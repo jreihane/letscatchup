@@ -1,5 +1,0 @@
-package com.letscatchup.event.domain.repository;
-
-public interface EventCommentsCrudRepository {
-
-}

@@ -1,0 +1,37 @@
+.header {
+	position: fixed;
+	height: 40px;
+	width: 100%;
+	background-color: #74f87a;/* #c0ffc3; */
+	z-index: 1000;
+}
+
+.logo {
+	width: 200px;
+	display: inline-block;
+	float: left;
+	clear: left;
+	position: absolute;
+	top: 10px;
+}
+
+.otherContent {
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+	position: relative;
+	top: 10px;
+	color: #4513cc;
+}
+
+.signin {
+	width: 100px;
+	display: inline-block;
+	text-align: right;
+}
+
+.signup {
+	width: 100px;
+	display: inline-block;
+	text-align: right;
+}

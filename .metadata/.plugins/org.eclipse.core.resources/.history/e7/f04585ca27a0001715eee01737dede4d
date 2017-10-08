@@ -1,5 +1,0 @@
-package com.letscatchup.user.types;
-
-public enum UserType {
-
-}

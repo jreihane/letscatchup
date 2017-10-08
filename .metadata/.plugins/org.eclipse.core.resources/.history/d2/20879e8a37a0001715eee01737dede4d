@@ -1,5 +1,0 @@
-package com.letscatchup.event.type;
-
-public enum FoodType {
-
-}
