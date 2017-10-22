@@ -6,7 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-import com.letscatchup.core.domain.BaseEntity;
+import com.letscatchup.core.domain.entity.BaseEntity;
 
 @Entity
 @Table(name="LCU_SPONSORS")

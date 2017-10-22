@@ -10,7 +10,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-import com.letscatchup.core.domain.BaseEntity;
+import com.letscatchup.core.domain.entity.BaseEntity;
 import com.letscatchup.user.domain.entity.UserEntity;
 
 @Entity

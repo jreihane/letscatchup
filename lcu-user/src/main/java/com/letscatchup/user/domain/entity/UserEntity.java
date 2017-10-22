@@ -10,7 +10,7 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import com.letscatchup.core.domain.BaseEntity;
+import com.letscatchup.core.domain.entity.BaseEntity;
 import com.letscatchup.user.types.UserStatus;
 
 @Entity
@@ -40,7 +40,17 @@ public class UserEntity extends BaseEntity {
 	@Column(name="USR_STATUS")
 	private UserStatus status;
 
+	@Column(name="USR_PIC")
+	private String picture;
 	
+	public String getPicture() {
+		return picture;
+	}
+
+	public void setPicture(String picture) {
+		this.picture = picture;
+	}
+
 	public String getFirstName() {
 		return firstName;
 	}

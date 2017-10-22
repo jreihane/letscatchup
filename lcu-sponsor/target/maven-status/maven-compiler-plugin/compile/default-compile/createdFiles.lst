@@ -1,0 +1,5 @@
+com/letscatchup/sponsor/controller/SponsorController.class
+com/letscatchup/sponsor/domain/entity/SponsorCrudRepository.class
+com/letscatchup/sponsor/App.class
+com/letscatchup/sponsor/service/SponsorService.class
+com/letscatchup/sponsor/domain/entity/SponsorEntity.class

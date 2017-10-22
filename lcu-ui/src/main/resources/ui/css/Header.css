@@ -2,7 +2,7 @@
 	position: fixed;
 	height: 40px;
 	width: 100%;
-	background-color: #74f87a;/* #c0ffc3; */
+	background-color: #41ed49;/* #c0ffc3; */
 	z-index: 1000;
 }
 
@@ -21,7 +21,8 @@
 	margin-right: 20px;
 	position: relative;
 	top: 10px;
-	color: #4513cc;
+	color: white;
+	font-weight: bold;
 }
 
 .signin {

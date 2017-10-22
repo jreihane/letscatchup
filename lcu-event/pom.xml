@@ -26,7 +26,7 @@
   	
   	<dependency>
   		<groupId>com.letscatchup</groupId>
-  		<artifactId>lcu-group-management</artifactId>
+  		<artifactId>lcu-group</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
   </dependencies>

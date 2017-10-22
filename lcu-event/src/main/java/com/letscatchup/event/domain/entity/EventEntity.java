@@ -15,7 +15,7 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.letscatchup.core.domain.BaseEntity;
+import com.letscatchup.core.domain.entity.BaseEntity;
 import com.letscatchup.event.type.EventStatus;
 import com.letscatchup.event.type.FoodType;
 import com.letscatchup.group.domain.entity.GroupEntity;
@@ -60,6 +60,17 @@ public class EventEntity extends BaseEntity {
 	
 	@Column(name="EV_FOOD_TYPE")
 	private FoodType foodType;
+	
+	public String getImgAddress() {
+		return imgAddress;
+	}
+
+	public void setImgAddress(String imgAddress) {
+		this.imgAddress = imgAddress;
+	}
+
+	@Column(name="EV_IMG_ADDRESS")
+	private String imgAddress;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="EV_GROUP")

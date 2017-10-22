@@ -1,8 +1,10 @@
+com/letscatchup/core/WebConfig$1.class
+com/letscatchup/core/WebConfig.class
 com/letscatchup/core/exception/LcuException.class
 com/letscatchup/core/exception/LcuRuntimeException.class
 com/letscatchup/core/domain/BaseDto.class
 com/letscatchup/core/domain/BaseCompositeEntity.class
 com/letscatchup/core/db/LcuCrudRepository.class
-com/letscatchup/core/domain/BaseEntity.class
+com/letscatchup/core/domain/entity/BaseEntity.class
 com/letscatchup/core/util/ObjectConverter.class
 com/letscatchup/core/BaseApp.class

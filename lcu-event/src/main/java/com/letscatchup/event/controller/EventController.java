@@ -1,6 +1,9 @@
 package com.letscatchup.event.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,6 +15,7 @@ import com.letscatchup.event.service.EventService;
 
 @RestController
 @RequestMapping("/event")
+//@CrossOrigin(origins = "http://localhost:8091")
 public class EventController {
 	
 
@@ -37,8 +41,13 @@ public class EventController {
 	}
 	
 	@RequestMapping(value = "/{eventId}", method= RequestMethod.GET)
-	public EventEntity getEvent(@PathVariable(name="eventId") Long eventId) {
-		return eventService.loadEvent(eventId);
+	public List<EventEntity> getEvent(@PathVariable(name="eventId") Long eventId) {
+		return eventService.loadEvents(eventId);
+		
+	}
+	@RequestMapping(value = "/", method= RequestMethod.GET)
+	public List<EventEntity> getEvents() {
+		return eventService.loadEvents(null);
 		
 	}
 	

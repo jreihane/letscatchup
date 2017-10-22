@@ -1,5 +1,8 @@
 package com.letscatchup.event.service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -31,9 +34,15 @@ public class EventService {
 		
 	}
 
-	public EventEntity loadEvent(Long eventId) {
+	public List<EventEntity> loadEvents(Long eventId) {
 		
-		return eventCrudRepository.findOne(eventId);
+		if(eventId != null && eventId > 0) {
+			List<EventEntity> result = new ArrayList<>();
+			result.add(eventCrudRepository.findOne(eventId));
+			
+			return result;
+		}
 		
+		return eventCrudRepository.findAll();
 	}
 }

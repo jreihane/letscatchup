@@ -11,14 +11,23 @@
 }
 
 .eventImg {
-	border: 1px solid black;
 	width: 350px;
 	height: 350px;
+}
+
+.imgContainer {
+	width: 400px;
+	display: table-cell;
 }
 
 .eventTitleContainer {
 	height: 35px;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.eventDetailContainer {
+	display: table-cell;
+	padding: 5px;
 }
 
 .eventTitle {
@@ -28,6 +37,15 @@
 	font-style: italic;
 	display: inline-block;
 	width: 70%;
+	height: 50px;
+}
+
+.eventAddress {
+	font-size: 18px;
+	color: #247233;
+	font-weight: 900;
+	font-style: normal;
+	min-height: 50px;
 }
 
 .eventDate {
@@ -35,6 +53,7 @@
 	font-weight: normal;
 	font-style: italic;
 	display: inline-block;
+	height: 50px;
 }
 
 .eventGroupOrOrganiser {
@@ -42,6 +61,7 @@
 	font-weight: normal;
 	font-style: normal;
 	color: #44784a;
+	height: 30px;
 }
 
 .eventSponsor {
@@ -50,3 +70,71 @@
 	font-style: normal;
 	color: #12720c;
 }
+
+.detailBackground {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(95, 95, 95, .4);
+}
+
+.detailContainer {
+	margin: 0 auto;
+	padding: 60px 10px;
+	width: 50%;
+	background-color: rgba(242, 242, 242, 1);
+}
+
+.bringYourFood {
+	background-image: url('../img/byf.png');
+	display: table-cell;
+	width: 24px;
+	height: 24px;
+}
+
+.noFood {
+	background-image: url('../img/nf.png');
+	display: table-cell;
+	width: 24px;
+	height: 24px;
+}
+
+.foodServed {
+	background-image: url('../img/fs.png');
+	display: table-cell;
+	width: 24px;
+	height: 24px;
+}
+
+.childrenAllowed {
+	background-image: url('../img/cha.png');
+	display: table-cell;
+	width: 24px;
+	height: 24px;
+}
+
+.childrenNotAllowed {
+	background-image: url('../img/nch.png');
+	display: table-cell;
+	width: 24px;
+	height: 24px;
+}
+
+.attendeesContainer {
+	padding-left: 15px;
+}
+
+.attendee {
+	width: 36px;
+	height: 36px;
+	overflow: hidden;
+	border-radius: 50%;
+	display: inline-block;
+	margin-left: -15px;
+}
+
+.eventRating {
+	height: 30px;
+}
+
+

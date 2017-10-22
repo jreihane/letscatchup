@@ -5,7 +5,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Service;
 
 import com.letscatchup.core.db.LcuCrudRepository;
-import com.letscatchup.core.domain.BaseEntity;
+import com.letscatchup.core.domain.entity.BaseEntity;
 import com.letscatchup.user.domain.entity.UserEntity;
 import com.letscatchup.user.domain.repository.UserCrudRepository;
 
