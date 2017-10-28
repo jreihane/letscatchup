@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../css/Event.css'
+import styles from '../../css/Event.css';
 
 export default class EventItem extends React.Component {
    //{this.props.organiser.firstName}

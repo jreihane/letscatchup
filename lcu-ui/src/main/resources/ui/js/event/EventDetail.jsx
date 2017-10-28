@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from '../../css/Event.css'
 import EventStore from './EventStore.jsx';
+import EventSponsor from '../sponsor/EventSponsor.jsx';
 import * as EventActions from './EventAction.jsx';
+import EventCommentsList from './comment/EventCommentsList.jsx';
 import Moment from 'react-moment';
 import ReactStars from 'react-stars';
 
@@ -23,8 +25,10 @@ export default class EventDetail extends React.Component {
         EventStore.on("change", () => {
 
             this.setState({
-                eventDetail: EventStore.getEventDetail(this.props.match.params.eventId),
+                eventDetail: EventStore.getEventDetail(),
             });
+            
+            EventStore.loadEventComments(this.props.match.params.eventId);
             
         });
         
@@ -73,33 +77,47 @@ export default class EventDetail extends React.Component {
             });
         }
         
+        const sponsorComponents = eventDetail.sponsor === undefined ? '' : eventDetail.sponsor.map((sponsorItem,i) => {
+            return <EventSponsor key={sponsorItem.id} {...sponsorItem} />;
+        });
+        
+        const eventId1 = eventDetail.id;
+        
         return(
                 <div className={styles.detailBackground} 
                         onClick={this.closeEventDetailWindow.bind(this)} >
                 
                     <div className={styles.detailContainer} onClick={this.eventContainerClicked.bind(this)}>
-                        <div style={style} className={styles.eventImg + ' ' + styles.imgContainer}>&nbsp;</div>
-                        
-                        <div className={styles.eventDetailContainer}>
-                            <div className={styles.eventRating}>
-                                <ReactStars count={5} size={24} color2={'#ffd700'} edit={false} half={true} value={eventDetail.rate}/>
+                        <div>
+                            <div style={style} className={styles.eventImg + ' ' + styles.imgContainer}>
+                                {sponsorComponents}
+                                &nbsp;
                             </div>
-                            <div className={styles.eventTitleContainer}>
-                                <div className={styles.eventTitle}>{eventDetail.name}</div>
-                                <Moment format="YYYY-MM-DD HH:mm" className={styles.eventDate}>
-                                    {eventDetail.date}
-                                </Moment>
-                                <div className={styles.eventAddress}>{eventDetail.address}</div>
-                                {/*<div className={styles.signin}>Organiser</div>
-                                <div className={styles.eventGroupOrOrganiser}>&nbsp;</div>
-                                <div className={styles.eventSponsor}>{eventDetail.sponsorName}&nbsp;</div>*/}
-                                <div>
-                                    <div className={fType} >&nbsp;</div>
+                            
+                            <div className={styles.eventDetailContainer}>
+                                <div className={styles.eventRating}>
+                                    <ReactStars count={5} size={24} color2={'#ffd700'} edit={false} half={true} value={eventDetail.rate}/>
                                 </div>
-                                <div className={styles.attendeesContainer}>
-                                    {attendeesComponents}
+                                <div className={styles.eventTitleContainer}>
+                                    <div className={styles.eventTitle}>{eventDetail.name}</div>
+                                    <Moment format="YYYY-MM-DD HH:mm" className={styles.eventDate}>
+                                        {eventDetail.date}
+                                    </Moment>
+                                    <div className={styles.eventAddress}>{eventDetail.address}</div>
+                                    {/*<div className={styles.signin}>Organiser</div>
+                                    <div className={styles.eventGroupOrOrganiser}>&nbsp;</div>*/}
+                                    <div className={styles.eventSponsor}>{eventDetail.sponsorName}&nbsp;</div>
+                                    <div>
+                                        <div className={fType} >&nbsp;</div>
+                                    </div>
+                                    <div className={styles.attendeesContainer}>
+                                        {attendeesComponents}
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <div>
+                             <EventCommentsList eventId={eventDetail.id === undefined ? 0 : eventDetail.id}/>
                         </div>
                     </div>
                 </div>

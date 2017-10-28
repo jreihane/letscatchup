@@ -1,5 +1,7 @@
 package com.letscatchup.event.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,7 +23,14 @@ public class EventCommentController {
 	@RequestMapping(value = "/{eventId}/comments/{commentId}", method= RequestMethod.GET)
 	public EventCommentEntity loadComment(@PathVariable("eventId") Long eventId, @PathVariable("commentId") Long commentId) {
 		
-		return eventCommentService.loadComment(commentId);
+		return eventCommentService.loadComment(eventId, commentId).get(0);
+		
+	}
+	
+	@RequestMapping(value = "/{eventId}/comments", method= RequestMethod.GET)
+	public List<EventCommentEntity> loadComments(@PathVariable("eventId") Long eventId) {
+		
+		return eventCommentService.loadComment(eventId, null);
 		
 	}
 	

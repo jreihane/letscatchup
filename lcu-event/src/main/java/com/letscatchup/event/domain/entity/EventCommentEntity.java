@@ -5,11 +5,16 @@ import java.util.Date;
 import javax.persistence.AttributeOverride;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.letscatchup.core.domain.entity.BaseEntity;
 import com.letscatchup.user.domain.entity.UserEntity;
 
@@ -28,8 +33,9 @@ public class EventCommentEntity extends BaseEntity {
 	@Column(name="EVC_LAST_EDIT_DATETIME")
 	private Date lastEditDate;
 	
-	@ManyToOne
+	@ManyToOne(optional = false, fetch = FetchType.LAZY)
 	@JoinColumn(name="EVC_EV_ID")
+	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 	private EventEntity event;
 	
 	@ManyToOne

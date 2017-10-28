@@ -35,6 +35,18 @@ public class SponsorEntity extends BaseEntity {
 	@Column(name="SP_PASSWORD")
 	private String password;
 
+	@Column(name="SP_LOGO")
+	private String logo;
+	
+
+	public String getLogo() {
+		return logo;
+	}
+
+	public void setLogo(String logo) {
+		this.logo = logo;
+	}
+
 	public String getName() {
 		return name;
 	}

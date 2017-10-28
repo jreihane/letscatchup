@@ -11,6 +11,7 @@ class EventStore extends EventEmitter {
         
        this.events = [];
        this.selectedEvent = null;
+       this.eventComments = [];
    
    }
    
@@ -39,8 +40,25 @@ class EventStore extends EventEmitter {
        return this.selectedEvent;
    }
    
-   getEventDetail(eventId){
+   loadEventComments(eventId) {
+       
+       if(eventId > 0) {
+           axios.get('http://localhost:8087/event/' + eventId + '/comments').then(response => {
+               this.eventComments = response.data;
+    
+               this.emit("changeComments");
+             })
+       }
+         
+      return this.eventComments;
+   }
+   
+   getEventDetail(){
        return this.selectedEvent;
+   }
+
+   getEventComments(){
+       return this.eventComments;
    }
    
    getAllEvents() {

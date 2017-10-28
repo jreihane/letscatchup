@@ -19,6 +19,7 @@ import com.letscatchup.core.domain.entity.BaseEntity;
 import com.letscatchup.event.type.EventStatus;
 import com.letscatchup.event.type.FoodType;
 import com.letscatchup.group.domain.entity.GroupEntity;
+import com.letscatchup.sponsor.domain.entity.SponsorEntity;
 import com.letscatchup.user.domain.entity.UserEntity;
 
 @Entity
@@ -84,6 +85,21 @@ public class EventEntity extends BaseEntity {
 	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 	private List<UserEntity> attendees;
 	
+	@ManyToMany
+	@JoinTable(name = "LCU_EV_SPONSORS", 
+			joinColumns = @JoinColumn(name = "SPE_EV_ID"), 
+			inverseJoinColumns = @JoinColumn(name = "SPE_SP_ID"))
+	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+	private List<SponsorEntity> sponsor;
+	
+
+	public List<SponsorEntity> getSponsor() {
+		return sponsor;
+	}
+
+	public void setSponsor(List<SponsorEntity> sponsor) {
+		this.sponsor = sponsor;
+	}
 
 	public String getName() {
 		return name;
